@@ -23,6 +23,21 @@ services:
 
 
 
+## Docker-Compose Commands
+
+
+
+```
+docker-compose up -d
+docker-compose stop 
+docker-compose start
+docker-compose down
+docker-compose images
+docker-compose ps 
+```
+
+
+
 ## Docker_Compose_File for image and conatiner creation using own DockerFile
 
 
