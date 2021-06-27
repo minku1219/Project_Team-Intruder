@@ -1,4 +1,4 @@
-## Docker_Compose_File ##
+## Docker_Compose_File for Container Creation ##
 
 
 
@@ -22,3 +22,20 @@ services:
 ```
 
 
+
+## Docker_Compose_File for image and conatiner creation using own DockerFile
+
+
+
+```
+version: "3.8"
+services: 
+    minkuv1:
+        image: minkum:v2
+        build: .
+        container_name: mk1
+        # command: echo Hello World
+ ```
+ 
+ 
+ 
