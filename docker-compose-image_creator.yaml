@@ -1,0 +1,8 @@
+version: "3.8"
+services: 
+    minkuv1:
+        image: minkum:v2
+        build: .
+        container_name: mk1
+        # command: echo Hello World
+        
