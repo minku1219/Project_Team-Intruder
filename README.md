@@ -38,6 +38,14 @@ docker-compose ps
 
 
 
+## ScreenShot ##
+
+
+
+<img src="Docker_Compose.png">
+
+
+
 ## Docker_Compose_File for image and conatiner creation using own DockerFile
 
 
