@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:18.04
 # MAINTAINER minku1219@gmail.com
 RUN apt update -y
 RUN apt install apache2 -y && apt clean
