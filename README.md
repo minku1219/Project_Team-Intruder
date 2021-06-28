@@ -44,3 +44,19 @@ docker run -itd --name container_name -p port:port image_name
 ```
 
 
+
+## ScreenShot ##
+
+
+
+<img src="Apche_Img.png">
+
+
+
+<img src="Port.png">
+
+
+
+<img src="PortForwarding">
+
+
