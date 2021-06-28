@@ -57,6 +57,6 @@ docker run -itd --name container_name -p port:port image_name
 
 
 
-<img src="PortForwarding">
+<img src="PortForwarding.png">
 
 
