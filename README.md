@@ -33,3 +33,14 @@ ENTRYPOINT apache2ctl -D FOREGROUND
 ```
 
 
+
+## Commands For Building a Image and Running it ##
+
+
+
+```
+docker build -t image_name:tag .
+docker run -itd --name container_name -p port:port image_name
+```
+
+
