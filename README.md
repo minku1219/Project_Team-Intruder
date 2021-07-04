@@ -52,6 +52,16 @@ export PATH
 
 
 
+## Install Hadoop ##
+
+
+
+```
+https://downloads.apache.org/hadoop/common/stable/hadoop-3.3.1.tar.gz
+```
+
+
+
 ## .bashrc File ScreenShot ##
 
 
