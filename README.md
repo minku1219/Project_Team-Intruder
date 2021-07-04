@@ -40,9 +40,10 @@ Go to .bashrc File
 cd ~
 vi .bashrc
 ```
-
-
-
+Check Java Version
+```
+java -version
+```
 Add This to your .bashrc file 
 ```
 JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el8_4.x86_64
@@ -57,7 +58,29 @@ export PATH
 
 
 ```
-https://downloads.apache.org/hadoop/common/stable/hadoop-3.3.1.tar.gz
+wget https://downloads.apache.org/hadoop/common/stable/hadoop-3.3.1.tar.gz
+```
+
+
+
+## Transfer Hadoop to Containers ##
+
+
+
+```
+docker cp hadoop-3.3.1.tar.gz namenode:/
+docker cp hadoop-3.3.1.tar.gz datanode1:/
+docker cp hadoop-3.3.1.tar.gz datanode2:/
+```
+
+
+## Unzip and Install Hadoop File ##
+
+
+
+```
+dnf install tar -y
+tar -xvf hadoop-3.3.1.tar.gz
 ```
 
 
