@@ -85,6 +85,13 @@ tar -xvf hadoop-3.3.1.tar.gz
 
 
 
+## Create an image Using Existing Docker Containers ##
+
+
+
+```
+docker commit -m "datanode sample" datanode1 hadoop:v1
+```
 ## .bashrc File ScreenShot ##
 
 
