@@ -4,7 +4,7 @@
 
 ```
 docker network create network_name --subnet ip_series
-docker network ceate myhadoop_br --subnet 172.31.49.84/24
+docker network ceate myhadoop_br --subnet 192.168.200.100/24
 ```
 
 
@@ -14,7 +14,7 @@ docker network ceate myhadoop_br --subnet 172.31.49.84/24
 
 
 ```
-docker  run  -itd --name  namenode  --hostname namenode --network myhadoop_br --ip 172.31.49.1 oraclelinux:8.3  bash  
+docker  run  -itd --name  namenode  --hostname namenode --network myhadoop_br --ip 198.168.200.100 oraclelinux:8.3  bash  
 docker  run  -itd --name  datanode1  --hostname datanode1 --network myhadoop_br  oraclelinux:8.3  bash 
 docker  run  -itd --name  datanode2  --hostname datanode2 --network myhadoop_br  oraclelinux:8.3  bash 
 ``` 
