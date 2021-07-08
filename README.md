@@ -95,7 +95,7 @@ docker commit -m "datanode sample" datanode1 hadoop:v1
 
 
 
-## Setting Path Of Hadoop_Cluster ##
+## Setting Path Of Hadoop_Cluster  For NameNode And DataNode##
 
 
 
@@ -124,13 +124,13 @@ vi core-site.xml
 vi hdfs-site.xml
 ```
 
-Make Desirable Changes in hadoop-env.sh
+Make Desirable Changes in hadoop-env.sh Same for Both
 ```
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el8_4.x86_64
 export HADOOP_HOME=/hadoop3
 ```
 
-Make Desirable Changes in core-site.xml 
+Make Desirable Changes in core-site.xml Same for Both
 ```
 <configuration>
 <property>
@@ -141,7 +141,7 @@ Make Desirable Changes in core-site.xml
 </configuration>
 ```
 
-Make Desirable Changes in hdfs-site.xml
+Make Desirable Changes in hdfs-site.xml only for NameNode
 ```
 <configuration>
 <property>
@@ -158,6 +158,18 @@ Make Desirable Changes in hdfs-site.xml
 </configuration>
 ```
 
+Make Desirable Changes in hdfs-site.xml only for DataNode
+```
+<configuration>
+
+<property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/mydndata1</value>
+        <description>location where datanode will store its data</description>
+</property>
+</configuration>
+
+```
 
 ## Turning on Hadoop_clusters DataNode ##
 
