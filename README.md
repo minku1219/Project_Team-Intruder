@@ -117,7 +117,7 @@ export PATH
 
 ```
 rm hadoop-3.3.1.tar.gz
-mv hadoop-3.3.1/ hadoop3
+mv hadoop-3.3.1 /hadoop3
 cd hadoop3/etc/hadoop/
 vi hadoop-env.sh
 vi core-site.xml 
