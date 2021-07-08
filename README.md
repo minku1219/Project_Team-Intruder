@@ -92,7 +92,86 @@ tar -xvf hadoop-3.3.1.tar.gz
 ```
 docker commit -m "datanode sample" datanode1 hadoop:v1
 ```
-## .bashrc File ScreenShot ##
+
+
+
+## Setting Path Of Hadoop_Cluster ##
+
+
+
+```
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el8_4.x86_64
+
+HADOOP_HOME=/hadoop3
+
+PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+
+export PATH
+```
+
+
+
+## Setting Hadoop_Cluster Steps ##
+
+
+
+```
+rm hadoop-3.3.1.tar.gz
+mv hadoop-3.3.1/ hadoop3
+cd hadoop3/etc/hadoop/
+vi hadoop-env.sh
+vi core-site.xml 
+vi hdfs-site.xml
+```
+
+Make Desirable Changes in hadoop-env.sh
+```
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el8_4.x86_64
+export HADOOP_HOME=/hadoop3
+```
+
+Make Desirable Changes in core-site.xml 
+```
+<configuration>
+<property>
+        <name>fs.default.name</name>
+        <value>hdfs://namenode:9000</value>
+</property>
+
+</configuration>
+```
+
+Make Desirable Changes in hdfs-site.xml
+```
+<configuration>
+<property>
+        <name>dfs.namenode.name.dir</name>
+        <value>/mynndata</value>
+        <description>location where namenode will store its metadata </description>
+</property>
+
+<property>
+        <name>dfs.replication</name>
+        <value>3</value>
+        <description> number of copy for each block or chunk </description>
+</property>
+</configuration>
+```
+
+
+## Turning on Hadoop_clusters DataNode ##
+
+
+
+```
+hdfs namenode -format
+hdfs --daemon start namenode
+jps
+```
+
+
+
+## .bashrc File ScreenShot for Java Path ##
 
 
 
@@ -105,3 +184,37 @@ docker commit -m "datanode sample" datanode1 hadoop:v1
 
 
 <img src="Path.png">
+
+
+
+## .bashrc File ScreenShot for Hadoop_Cluster Path ##
+
+
+
+<img src="bashrcH.png">
+
+
+
+## hadoop-env.sh File ScreenShot ##
+
+
+
+<img src="env.png">
+
+
+
+## core-site.xml File ScreenShot ##
+
+
+
+<img src="core.png">
+
+
+
+## hdfs-site.xml File ScreenShot ##
+
+
+
+<img src="hdfs.png">
+
+
