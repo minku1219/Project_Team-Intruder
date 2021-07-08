@@ -91,6 +91,10 @@ tar -xvf hadoop-3.3.1.tar.gz
 
 ```
 docker commit -m "datanode sample" datanode1 hadoop:v1
+docker  run  -itd --name  datanode2  --hostname datanode2 --network Hadoop_Br hadoop:v1  bash  
+docker  run  -itd --name  datanode3  --hostname datanode3 --network Hadoop_Br  hadoop:v1  bash 
+docker  run  -itd --name  datanode4  --hostname datanode4 --network Hadoop_Br  hadoop:v1  bash 
+
 ```
 
 
