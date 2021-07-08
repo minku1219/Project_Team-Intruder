@@ -218,3 +218,11 @@ jps
 <img src="hdfs.png">
 
 
+
+## Docker Containers with 6 DataNodes and 1 NameNode ##
+
+
+
+<img src="ps.png">
+
+
