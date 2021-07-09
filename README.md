@@ -205,6 +205,27 @@ ls -lh File_location
 
 
 
+## Directories in Hadoop ##
+
+
+
+Creating Directory
+```
+hdfs dfs -mkdir Directory_Name
+```
+
+Checking Created/Existing Directories
+```
+hdfs dfs -ls -R(For Subfolders) /
+```
+
+Copying Data From Local to Hadoop
+```
+hdfs dfs -copyFromLocal "Source" "Destination"
+```
+
+
+
 ## .bashrc File ScreenShot for Java Path ##
 
 
