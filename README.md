@@ -194,6 +194,17 @@ jps
 
 
 
+## Generate Own Data ##
+
+
+
+```
+yes " " >File_Location
+ls -lh File_location
+```
+
+
+
 ## .bashrc File ScreenShot for Java Path ##
 
 
