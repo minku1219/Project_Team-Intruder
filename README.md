@@ -175,13 +175,20 @@ Make Desirable Changes in hdfs-site.xml only for DataNode
 
 ```
 
-## Turning on Hadoop_clusters DataNode ##
+## Turning on Hadoop_cluster ##
 
 
 
+Only For NameNode
 ```
 hdfs namenode -format
 hdfs --daemon start namenode
+jps
+```
+
+Only For DataNodes
+```
+hdfs --daemon start datanode
 jps
 ```
 
