@@ -272,6 +272,31 @@ yarn --daemon start  resourcemanager
 
 
 
+vi yarn-sites.xml (only for DataNode)
+```
+<configuration>
+
+<property>
+        <name>yarn.resourcemanager.resource-tracker.address</name>
+        <value>namenode:8025</value>
+</property>
+
+<property>
+        <name>yarn.nodemanager.aux-services.</name>
+        <value>mapreduce_shuffle</value>
+</property>
+</configuration>
+```
+
+
+
+Start Yarn in DataNode
+```
+yarn --daemon start  nodemanager
+```
+
+
+
 ## .bashrc File ScreenShot for Java Path ##
 
 
@@ -325,5 +350,29 @@ yarn --daemon start  resourcemanager
 
 
 <img src="ps.png">
+
+
+
+## mapred-site.xml (NameNode) File ScreenShot ##
+
+
+
+<img src="mn.png">
+
+
+
+## yarn-site.xml (NameNode) File ScreenShot ##
+
+
+
+<img src="yn.png">
+
+
+
+## yarn-site.xml (DataNode) File ScreenShot ##
+
+
+
+<img src="yd.png">
 
 
