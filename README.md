@@ -112,3 +112,13 @@ yes "Data" >File_location
 f1=sc.textFile(File_location)
 f1.first()
 ```
+
+
+
+## ScreenShot For /root/.bashrc File ##
+
+
+
+<img src="r.png">
+
+
