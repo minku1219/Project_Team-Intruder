@@ -115,10 +115,29 @@ f1.first()
 
 
 
+## Run Python file to perform task
+
+
+
+```
+spark-submit sparkPython1.py
+spark-submit countLetter.py
+```
+
+
+
 ## ScreenShot For /root/.bashrc File ##
 
 
 
 <img src="r.png">
+
+
+
+## ScreenShot for Output After Processing Data
+
+
+
+<img src="ot.png">
 
 
