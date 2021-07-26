@@ -60,3 +60,11 @@ kubectl   get  nodes
 ```
 
 
+
+## ScreenShot for Kubernetes
+
+
+
+<img src="K8s.png">
+
+
