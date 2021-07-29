@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+ name: minkupod-1
+spec: 
+ containers:
+        - image: alpine
+          name: minkucnt1
+         icommand: ["sh","-c","ping localhost"]
+
+
+         
